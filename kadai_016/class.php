@@ -12,8 +12,8 @@
         // クラスを定義する
         class Food {
             //プロパティを定義する
-            public $name;
-            public $price;
+            private $name;
+            private $price;
 
             //コンストラクタ
             public function __construct(string $name, int $price) {
@@ -36,9 +36,9 @@
         // クラスを定義する
         class Animal {
             //プロパティを定義する
-            public $name;
-            public $height;
-            public $weight;
+            private $name;
+            private $height;
+            private $weight;
         
         //コンストラクタを定義
         public function __construct(string $name, int $height, int $weight) {
@@ -48,10 +48,7 @@
             }
             //メソッド
             public function show_height() {
-                echo $this->get_height();
-            }
-            public function get_height() {
-                return $this->height;
+                echo $this->height . '<br>'; 
             }
         }
         //インスタント化
