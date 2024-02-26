@@ -15,10 +15,12 @@
 
     <!-- Course -->
 
-        <?php if (have_posts()) : //ループ実装 ?>
-          <?php while (have_posts()) : the_post(); ?>
+    <?php if(have_posts()) : //ループ始まり ?>
+    <?php while(have_posts()) : the_post(); ?>
 
-          <div class="course">
+
+
+    <div class="course">
       <div class="row content-body">
         <!-- Course -->
         <div class="col-lg-8">
@@ -29,6 +31,7 @@
               <div class="tab_panel">
                 <div class="tab_panel_title"><?php the_title(); ?></div>
                 <?php the_content(); ?>
+                
               </div>
             </div>
           </div>
@@ -43,6 +46,6 @@
 
     <?php endwhile; ?>
     <?php endif; ?>
-
+    
 
     <?php get_footer(); ?>

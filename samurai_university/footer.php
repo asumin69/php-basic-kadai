@@ -1,5 +1,5 @@
- <!-- footer.php ここから -->
- <footer class="footer">
+    <!-- footer.php ここから -->
+    <footer class="footer">
       <div class="row footer_row">
         <div class="col">
           <div class="footer_content">
@@ -37,10 +37,10 @@
                 <div class="footer_section footer_links">
                   <div class="footer_links_container">
                     <ul>
-                      <li><a href="<?php echo home_url(); ?>/category/news">ニュース</a></li>
-                      <li><a href="<?php echo home_url(); ?>/category/event">イベント</a></li>
-                      <li><a href="<?php echo home_url(); ?>/course">コース</a></li>
-                      <li><a href="<?php echo home_url(); ?>/about">侍大学について</a></li>
+                      <li><a href="news.html">ニュース</a></li>
+                      <li><a href="events.html">イベント</a></li>
+                      <li><a href="courses.html">コース</a></li>
+                      <li><a href="about.html">侍大学について</a></li>
                     </ul>
                   </div>
                 </div>
@@ -67,9 +67,9 @@
   </div>
 
   <!--jQuery-->
-  <script src="<php echo get_template_directory_uri(); ?>/js/jquery-3.2.1.min.js"></script>
-  <script src="<php echo get_template_directory_uri(); ?>/styles/bootstrap4/popper.js"></script>
-  <script src="<php echo get_template_directory_uri(); ?>/styles/bootstrap4/bootstrap.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.2.1.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/styles/bootstrap4/popper.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/styles/bootstrap4/bootstrap.min.js"></script>
 
   <script type="text/javascript">
     $(".carousel").carousel();
